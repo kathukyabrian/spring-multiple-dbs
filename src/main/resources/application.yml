@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/t24?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: kitunda2018
+    hikari:
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+
+application:
+  jwt-secret: 9487f4b8-d71d-11ea-87d0-0242ac130001
+  expiry-time: 43200
